@@ -1,0 +1,141 @@
+2021-06-05 10:38:05,827 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2021-06-05 10:38:05,853 INFO o.a.j.JMeter: Loading user properties from: /usr/local/Cellar/jmeter/5.4.1/libexec/bin/user.properties
+2021-06-05 10:38:05,854 INFO o.a.j.JMeter: Loading system properties from: /usr/local/Cellar/jmeter/5.4.1/libexec/bin/system.properties
+2021-06-05 10:38:05,861 INFO o.a.j.JMeter: Copyright (c) 1998-2021 The Apache Software Foundation
+2021-06-05 10:38:05,861 INFO o.a.j.JMeter: Version 5.4.1
+2021-06-05 10:38:05,861 INFO o.a.j.JMeter: java.version=16.0.1
+2021-06-05 10:38:05,862 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2021-06-05 10:38:05,862 INFO o.a.j.JMeter: os.name=Mac OS X
+2021-06-05 10:38:05,862 INFO o.a.j.JMeter: os.arch=x86_64
+2021-06-05 10:38:05,862 INFO o.a.j.JMeter: os.version=11.4
+2021-06-05 10:38:05,862 INFO o.a.j.JMeter: file.encoding=UTF-8
+2021-06-05 10:38:05,862 INFO o.a.j.JMeter: java.awt.headless=null
+2021-06-05 10:38:05,862 INFO o.a.j.JMeter: Max memory     =1073741824
+2021-06-05 10:38:05,862 INFO o.a.j.JMeter: Available Processors =16
+2021-06-05 10:38:05,873 INFO o.a.j.JMeter: Default Locale=English (EN)
+2021-06-05 10:38:05,873 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2021-06-05 10:38:05,873 INFO o.a.j.JMeter: JMeterHome=/usr/local/Cellar/jmeter/5.4.1/libexec
+2021-06-05 10:38:05,873 INFO o.a.j.JMeter: user.dir  =/Users/lawrence_li/Documents/11_Code/14_High Availablibility Online Shopping System for Black Friday
+2021-06-05 10:38:05,873 INFO o.a.j.JMeter: PWD       =/Users/lawrence_li/Documents/11_Code/14_High Availablibility Online Shopping System for Black Friday
+2021-06-05 10:38:05,875 INFO o.a.j.JMeter: IP: 127.0.0.1 Name: Lawrence-Lis-MacBook-Pro.local FullName: localhost
+2021-06-05 10:38:06,279 INFO o.a.j.JMeter: Setting LAF to: com.github.weisj.darklaf.DarkLaf:com.github.weisj.darklaf.theme.DarculaTheme
+2021-06-05 10:38:07,354 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2021-06-05 10:38:08,411 INFO o.j.r.JARSourceHTTP: Requesting https://jmeter-plugins.org/repo/?installID=mac_os_x-5f5c58d1c5347f53ba5c279426183349-gui
+2021-06-05 10:38:09,556 INFO o.j.r.PluginManager: Plugins Status: [jpgc-plugins-manager=1.6, jmeter-core=5.4.1, jmeter-ftp=5.4.1, jmeter-http=5.4.1, jmeter-jdbc=5.4.1, jmeter-jms=5.4.1, jmeter-junit=5.4.1, jmeter-java=5.4.1, jmeter-ldap=5.4.1, jmeter-mail=5.4.1, jmeter-mongodb=5.4.1, jmeter-native=5.4.1, jmeter-tcp=5.4.1, jmeter-components=5.4.1]
+2021-06-05 10:38:34,382 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-06-05 10:38:34,383 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-06-05 10:38:34,383 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-06-05 10:38:34,383 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-06-05 10:38:34,383 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2021-06-05 10:38:34,383 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2021-06-05 10:39:36,795 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2021-06-05 10:39:36,795 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2021-06-05 10:39:36,795 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2021-06-05 10:39:36,796 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2021-06-05 10:39:36,797 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2021-06-05 10:39:36,824 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2021-06-05 10:39:36,852 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2021-06-05 10:39:36,852 INFO o.a.j.e.StandardJMeterEngine: Starting 30 threads for group Thread Group.
+2021-06-05 10:39:36,852 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2021-06-05 10:39:36,852 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=30 ramp-up=1 delayedStart=false
+2021-06-05 10:39:36,855 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2021-06-05 10:39:36,861 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2021-06-05 10:39:36,861 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2021-06-05 10:39:36,861 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = Lawrence-Lis-MacBook-Pro.local
+2021-06-05 10:39:36,866 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2021-06-05 10:39:36,867 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2021-06-05 10:39:36,867 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2021-06-05 10:39:36,867 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2021-06-05 10:39:36,867 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2021-06-05 10:39:36,886 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2021-06-05 10:39:36,923 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-3
+2021-06-05 10:39:36,954 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-4
+2021-06-05 10:39:36,986 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-5
+2021-06-05 10:39:37,019 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-6
+2021-06-05 10:39:37,055 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-7
+2021-06-05 10:39:37,088 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-8
+2021-06-05 10:39:37,119 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-9
+2021-06-05 10:39:37,153 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-10
+2021-06-05 10:39:37,183 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-11
+2021-06-05 10:39:37,216 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-12
+2021-06-05 10:39:37,250 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-13
+2021-06-05 10:39:37,284 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-14
+2021-06-05 10:39:37,318 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-15
+2021-06-05 10:39:37,351 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-16
+2021-06-05 10:39:37,384 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-17
+2021-06-05 10:39:37,418 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-18
+2021-06-05 10:39:37,451 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-19
+2021-06-05 10:39:37,481 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-5
+2021-06-05 10:39:37,482 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-5
+2021-06-05 10:39:37,483 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-7
+2021-06-05 10:39:37,483 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-7
+2021-06-05 10:39:37,483 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2021-06-05 10:39:37,483 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-2
+2021-06-05 10:39:37,483 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2021-06-05 10:39:37,483 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2021-06-05 10:39:37,484 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-20
+2021-06-05 10:39:37,485 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-16
+2021-06-05 10:39:37,486 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-16
+2021-06-05 10:39:37,488 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-4
+2021-06-05 10:39:37,488 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-11
+2021-06-05 10:39:37,488 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-11
+2021-06-05 10:39:37,488 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-4
+2021-06-05 10:39:37,488 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-15
+2021-06-05 10:39:37,488 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-15
+2021-06-05 10:39:37,489 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-13
+2021-06-05 10:39:37,490 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-13
+2021-06-05 10:39:37,494 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-9
+2021-06-05 10:39:37,494 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-18
+2021-06-05 10:39:37,495 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-9
+2021-06-05 10:39:37,494 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-14
+2021-06-05 10:39:37,495 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-14
+2021-06-05 10:39:37,495 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-18
+2021-06-05 10:39:37,495 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-8
+2021-06-05 10:39:37,495 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-10
+2021-06-05 10:39:37,495 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-8
+2021-06-05 10:39:37,495 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-10
+2021-06-05 10:39:37,498 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-17
+2021-06-05 10:39:37,498 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-3
+2021-06-05 10:39:37,498 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-6
+2021-06-05 10:39:37,498 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-17
+2021-06-05 10:39:37,498 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-3
+2021-06-05 10:39:37,498 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-6
+2021-06-05 10:39:37,502 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-12
+2021-06-05 10:39:37,502 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-12
+2021-06-05 10:39:37,512 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-19
+2021-06-05 10:39:37,512 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-19
+2021-06-05 10:39:37,516 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-21
+2021-06-05 10:39:37,523 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-20
+2021-06-05 10:39:37,523 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-20
+2021-06-05 10:39:37,538 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-21
+2021-06-05 10:39:37,539 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-21
+2021-06-05 10:39:37,549 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-22
+2021-06-05 10:39:37,573 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-22
+2021-06-05 10:39:37,573 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-22
+2021-06-05 10:39:37,581 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-23
+2021-06-05 10:39:37,605 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-23
+2021-06-05 10:39:37,605 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-23
+2021-06-05 10:39:37,616 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-24
+2021-06-05 10:39:37,637 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-24
+2021-06-05 10:39:37,637 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-24
+2021-06-05 10:39:37,647 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-25
+2021-06-05 10:39:37,669 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-25
+2021-06-05 10:39:37,669 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-25
+2021-06-05 10:39:37,681 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-26
+2021-06-05 10:39:37,710 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-26
+2021-06-05 10:39:37,710 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-26
+2021-06-05 10:39:37,710 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-27
+2021-06-05 10:39:37,733 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-27
+2021-06-05 10:39:37,733 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-27
+2021-06-05 10:39:37,748 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-28
+2021-06-05 10:39:37,768 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-28
+2021-06-05 10:39:37,768 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-28
+2021-06-05 10:39:37,781 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-29
+2021-06-05 10:39:37,802 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-29
+2021-06-05 10:39:37,802 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-29
+2021-06-05 10:39:37,811 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-30
+2021-06-05 10:39:37,832 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-30
+2021-06-05 10:39:37,832 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-30
+2021-06-05 10:39:37,833 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2021-06-05 10:39:37,834 INFO o.a.j.s.FileServer: Default base='/Users/lawrence_li/Documents/11_Code/14_High Availablibility Online Shopping System for Black Friday'
+2021-06-05 10:39:37,835 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
