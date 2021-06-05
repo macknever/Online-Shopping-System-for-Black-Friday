@@ -6,7 +6,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-//configure boot class scan
 @MapperScan("com.macknever.seckill.db.mappers")
 @ComponentScan(basePackages = {"com.macknever"})
 public class SecKillApplication {

@@ -13,8 +13,10 @@ import java.util.List;
 
 @SpringBootTest
 public class DaoTest {
+
     @Resource
     private SeckillActivityMapper seckillActivityMapper;
+
     @Autowired
     private SeckillActivityDao seckillActivityDao;
 
@@ -30,13 +32,15 @@ public class DaoTest {
         seckillActivity.setAvailableStock(100);
         seckillActivity.setLockStock(0L);
         seckillActivityMapper.insert(seckillActivity);
-        System.out.println("====>>>>" + seckillActivityMapper.selectByPrimaryKey(1L));
+        System.out.println("====>>>>" +
+                seckillActivityMapper.selectByPrimaryKey(1L));
     }
-
     @Test
-    void setSeckillActivityQuery() {
-        List<SeckillActivity> seckillActivitys = seckillActivityDao.querySeckillActivitysByStatus(0);
+    void setSeckillActivityQuery(){
+        List<SeckillActivity> seckillActivitys =
+                seckillActivityDao.querySeckillActivitysByStatus(0);
         System.out.println(seckillActivitys.size());
-        seckillActivitys.stream().forEach(seckillActivity -> System.out.println(seckillActivity.toString()));
+        seckillActivitys.stream().forEach(seckillActivity ->
+                System.out.println(seckillActivity.toString()));
     }
 }
