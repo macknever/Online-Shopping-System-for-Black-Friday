@@ -26,6 +26,7 @@ public class RedisPreheatRunner implements ApplicationRunner {
         List<SeckillActivity> seckillActivities =
                 seckillActivityDao.querySeckillActivitysByStatus(1);
         for (SeckillActivity seckillActivity : seckillActivities) {
+
             redisService.setValue("stock:" + seckillActivity.getId(),
                     (long) seckillActivity.getAvailableStock());
         }
