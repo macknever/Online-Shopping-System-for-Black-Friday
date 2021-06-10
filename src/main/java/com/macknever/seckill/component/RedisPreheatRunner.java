@@ -29,6 +29,8 @@ public class RedisPreheatRunner implements ApplicationRunner {
 
             redisService.setValue("stock:" + seckillActivity.getId(),
                     (long) seckillActivity.getAvailableStock());
+
+
         }
     }
 }
