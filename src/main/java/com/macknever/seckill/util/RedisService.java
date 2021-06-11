@@ -24,6 +24,11 @@ public class RedisService {
         jedisClient.set(key, value.toString());
         jedisClient.close();
     }
+    public void setValue(String key, String value) {
+        Jedis jedisClient = jedisPool.getResource();
+        jedisClient.set(key, value);
+        jedisClient.close();
+    }
     /**
      * 获取值
      *
@@ -116,4 +121,43 @@ public class RedisService {
                 String.valueOf(userId));
         jedisClient.close();
     }
+
+    /**
+     * 获取分布式锁
+     * @param lockKey
+     * @param requestId
+     * @param expireTime
+     * @return
+     */
+    public boolean tryGetDistributedLock(String lockKey, String requestId, int
+            expireTime) {
+        Jedis jedisClient = jedisPool.getResource();
+        String result = jedisClient.set(lockKey, requestId, "NX", "PX",
+                expireTime);
+        jedisClient.close();
+        if ("OK".equals(result)) {
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * 释放分布式锁
+     *
+     * @param lockKey 锁
+     * @param requestId 请求标识
+     * @return 是否释放成功
+     */
+    public boolean releaseDistributedLock(String lockKey, String requestId) {
+        Jedis jedisClient = jedisPool.getResource();
+        String script = "if redis.call('get', KEYS[1]) == ARGV[1] then return redis.call('del', KEYS[1]) else return 0 end";
+        Long result = (Long) jedisClient.eval(script,
+                Collections.singletonList(lockKey), Collections.singletonList(requestId));
+        jedisClient.close();
+        if (result == 1L) {
+            return true;
+        }
+        return false;
+    }
+
 }

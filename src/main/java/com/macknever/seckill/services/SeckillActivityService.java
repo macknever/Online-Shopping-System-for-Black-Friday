@@ -3,8 +3,10 @@ package com.macknever.seckill.services;
 import com.alibaba.fastjson.JSON;
 import com.macknever.seckill.db.dao.OrderDao;
 import com.macknever.seckill.db.dao.SeckillActivityDao;
+import com.macknever.seckill.db.dao.SeckillCommodityDao;
 import com.macknever.seckill.db.po.Order;
 import com.macknever.seckill.db.po.SeckillActivity;
+import com.macknever.seckill.db.po.SeckillCommodity;
 import com.macknever.seckill.mq.RocketMQService;
 import com.macknever.seckill.util.RedisService;
 import com.macknever.seckill.util.SnowFlake;
@@ -21,6 +23,18 @@ public class SeckillActivityService {
     @Autowired
     private RedisService redisService;
 
+    @Autowired
+    private SeckillActivityDao seckillActivityDao;
+
+    @Autowired
+    private RocketMQService rocketMQService;
+
+    @Autowired
+    SeckillCommodityDao seckillCommodityDao;
+
+    @Autowired
+    OrderDao orderDao;
+
     /**
      * check stock remaining
      *
@@ -30,15 +44,23 @@ public class SeckillActivityService {
 
     public boolean seckillStockValidator(long activityId) {
         String key = "stock:" + activityId;
-        System.out.println(activityId);
-        System.out.println(redisService.stockDeductValidator(key));
         return redisService.stockDeductValidator(key);
     }
 
-    @Autowired
-    private SeckillActivityDao seckillActivityDao;
-    @Autowired
-    private RocketMQService rocketMQService;
+    /**
+     * 将秒杀详情相关信息倒入redis
+     * @param seckillActivityId
+     */
+    public void pushSeckillInfoToRedis(long seckillActivityId) {
+        SeckillActivity seckillActivity =
+                seckillActivityDao.querySeckillActivityById(seckillActivityId);
+        redisService.setValue("seckillActivity:" + seckillActivityId, JSON.toJSONString(seckillActivity));
+        SeckillCommodity seckillCommodity =
+                seckillCommodityDao.querySeckillCommodityById(seckillActivity.getCommodityId());
+        redisService.setValue("seckillCommodity:" + seckillActivity.getCommodityId(), JSON.toJSONString(seckillCommodity));
+    }
+
+
     /**
      * datacenterId; 数据中心
      * machineId; 机器标识
@@ -85,8 +107,9 @@ public class SeckillActivityService {
         return order;
     }
 
-    @Autowired
-    OrderDao orderDao;
+
+
+
 
     /**
      * 订单支付完成处理
